@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #ececec;
+}
+
+.header {
+    display: flex;
+    height: 50px;
+    background-color: #002969;
+}
+
+.header a {
+    align-self: center;
+}
+
+.unifor-logo {
+    height: 40px;
+    margin-left: 3vw;
+    align-self: center;
+    cursor: pointer;
+}
+
+.container-table-phone {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.table-phone {
+    text-align: center;
+}
+
+.table-phone, th, td {
+    border: 1px solid black ;
+    border-collapse: collapse;
+}
+
+.container-table-place {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-table-place div li {
+    border: 1px solid black ;
+    border-collapse: collapse;
+    list-style-type: none;
+    text-align: center;
+}
+
+td, li {
+    width: 8vw;
+    height: 2vw;
+}
