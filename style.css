@@ -2,10 +2,12 @@
 
 
 @font-face {
-  font-family: BebasNeue;
-  src: url('fontes/BebasNeue-Regular.otf');
-  src: local(BebasNeue-Regular.otf), url(BebasNeue-Regular.otf);
-} /* WARNING: NÃO MEXER NA FONTE FACE */
+    font-family: BebasNeue;
+    src: url('fontes/BebasNeue-Regular.otf');
+    src: local(BebasNeue-Regular.otf), url(BebasNeue-Regular.otf);
+}
+
+/* WARNING: NÃO MEXER NA FONTE FACE */
 * {
     padding: 0;
     margin: 0;
@@ -13,33 +15,45 @@
 }
 
 body {
-  background: #1488CC;
-  background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-  background: linear-gradient(to right, #2B32B2, #1488CC);
-  font: 25px BebasNeue, Arial, Tahoma, Sans-serif;
+    background: #e0e0e0;
+    /* background: -webkit-linear-gradient(to right, #2B32B2, #1488CC); */
+    /* background: linear-gradient(to right, #2B32B2, #1488CC); */
+    font: 25px BebasNeue, Arial, Tahoma, Sans-serif;
 }
 
-.h1-title{
-  font: 25px BebasNeue, Arial, Tahoma, Sans-serif;  /* COMBAK: comando para importar a fonte */
-  text-align: center;
-  color: white;
-  letter-spacing: .2rem; /* COMBAK: Espaçamento entre as letras */
+a {
+    text-decoration: none;
+    color: #e0e0e0;
 }
-.h2-title{
-  font: 25px BebasNeue, Arial, Tahoma, Sans-serif;  /* COMBAK: comando para importar a fonte */
-  text-align: center;
-  color: white;
-  margin-top: 120px;
-  letter-spacing: .2rem;
+
+.h1-title {
+    font: 25px BebasNeue, Arial, Tahoma, Sans-serif;
+    /* COMBAK: comando para importar a fonte */
+    text-align: center;
+    color: white;
+    letter-spacing: .2rem;
+    /* COMBAK: Espaçamento entre as letras */
+}
+
+.h2-title {
+    font: 25px BebasNeue, Arial, Tahoma, Sans-serif;
+    /* COMBAK: comando para importar a fonte */
+    text-align: center;
+    color: white;
+    margin-top: 120px;
+    letter-spacing: .2rem;
 }
 
 .header {
     display: flex;
     height: 50px;
     background-color: #002969;
+    margin: 0 0 20px 0;
+    justify-content: space-between;
 }
 
 .header a {
+    display: flex;
     align-self: center;
 }
 
@@ -50,78 +64,119 @@ body {
     cursor: pointer;
 }
 
+.unifor-online {
+    margin-right: 3vw;
+}
+
+.form-button {
+    margin-right: 4vw;
+}
 
 .container-table-phone {
     display: flex;
-    overflow-x:auto;
+    overflow-x: auto;
     justify-content: center;
     margin-top: 50px;
 
 }
 
-.table-phone {/* COMBAK: modificado para ficar uma tabela maior */
-  width:96%; /* COMBAK: tamanho da table */
-  table-layout: fixed;
-  text-align: center;
-  color: white ;
-  letter-spacing: .1rem;
+.container-table-phone-box {
+    display: flex;
+    justify-content: center;
 }
 
-.table-phone, th, td { /* COMBAK: muda a tabela junto com o texto */
-    border: 1px solid rgba(255,255,255,0.3) ;
+.table-phone {
+    /* COMBAK: modificado para ficar uma tabela maior */
+    width: 96%;
+    /* COMBAK: tamanho da table */
+    table-layout: fixed;
+    text-align: center;
+    color: white;
+    letter-spacing: .1rem;
+}
+
+.table-phone {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.table-phone,
+th,
+td {
+    /* COMBAK: muda a tabela junto com o texto */
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-collapse: collapse;
     padding: 15px;
     text-align: center;
-    vertical-align:middle;
-    border-bottom: solid 1px rgba(255,255,255,0.2);
+    vertical-align: middle;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
 }
 
-ul{
-  position: absolute;/* COMBAK: deixa do lado esquerdo, relative centraliza */
-  width: 450px;
-  margin:90px auto 0;
-  padding: 10px;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, .1);
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  overflow: hidden;
+ul {
+    position: absolute;
+    /* COMBAK: deixa do lado esquerdo, relative centraliza */
+    width: 450px;
+    margin: 90px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #002969;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 12px;
 }
 
-ul li{
-  display: flex;
-  background: rgba(255, 255, 255,.1);
-  padding: 10px 20px;
-  color: white;
-  margin: 5px 0;
-  transition: .8s;
-  border-radius: 5px;
-
-
+.list-place {
+    margin-left: 20px;
 }
 
-Ul li:nth-child(1){ /* COMBAK: esbrenqueçe as caixa de texto span da lista de itens */
-  background: rgba(255, 255, 255,.6);
-}
-Ul li:nth-child(2){
-  background: rgba(255, 255, 255,.4);
-}
-Ul li:nth-child(3){
-  background: rgba(255, 255, 255,.2);
-}
-
-ul li span:nth-child(1){ /* COMBAK: separa os caracteres do span o primeiro caractere no caso */
-  width: 30px;
+.list-place ul li {
+    display: flex;
+    background: rgba(255, 255, 255, .1);
+    padding: 10px 20px;
+    color: white;
+    margin: 5px 0;
+    transition: .8s;
+    border-radius: 5px;
 }
 
-
-ul li:hover{/* COMBAK: quando passar o mouse por cima */
-
-  transform: scale(1.06); /* COMBAK: tamanho da escala que vai aumentar quando passar o mouse por cima */
-  background: #1488CC;/* COMBAK: quando passar o mouse por cima ira ficar da cor em hexadeimal descrita */
-
+.list-place ul li:nth-child(1) {
+    /* COMBAK: esbrenqueçe as caixa de texto span da lista de itens */
+    background: rgba(255, 255, 255, .6);
 }
 
+.list-place ul li:nth-child(2) {
+    background: rgba(255, 255, 255, .4);
+}
+
+.list-place ul li:nth-child(3) {
+    background: rgba(255, 255, 255, .2);
+}
+
+.list-place ul li span:nth-child(1) {
+    /* COMBAK: separa os caracteres do span o primeiro caractere no caso */
+    width: 30px;
+}
+
+
+.list-place ul li:hover {
+    /* COMBAK: quando passar o mouse por cima */
+
+    transform: scale(1.06);
+    /* COMBAK: tamanho da escala que vai aumentar quando passar o mouse por cima */
+    background: #1488CC;
+    /* COMBAK: quando passar o mouse por cima ira ficar da cor em hexadeimal descrita */
+}
+
+th {
+    background-color: rgb(131, 131, 131);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(2, 74, 116);
+}
 
 
 
@@ -139,99 +194,130 @@ td {
     height: 2vw;
 }
 
-#Descricao-campus{
-  text-align: center;
-  color: white;
-  margin-top: 15px;
+#Descricao-campus {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
 
 }
 
 
 
-.slidershow{
-  width: 700px;
-  height: 400px;
-  overflow: hidden;/* COMBAK: sobrepondo as imagens */
+.slidershow {
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: -1px 2px 11px 0px black;
+    /* COMBAK: sobrepondo as imagens */
 }
 
-.middle{
-  position: absolute; /* COMBAK: posição absoluta, mantem lado esquerdo */
-  top: 111%;  /* COMBAK: quanto maior, ele vai para baixo */
-  left: 50%;  /* COMBAK: mais longe da esquerda  */
-  /*transform: translate(-50%,-50%);*/
-  border-radius: 5px;
-}
-
-
-.navigation{ /* COMBAK: navegação entre as imagens */
-  position: absolute;
-  bottom: 20px;
-  left: 50%;transform: translateX(-50%);
-  display: flex; /* COMBAK:para dividir em grid com as outras imagens  */
+.middle {
+    position: absolute;
+    /* COMBAK: posição absoluta, mantem lado esquerdo */
+    /* COMBAK: quanto maior, ele vai para baixo */
+    /* COMBAK: mais longe da esquerda  */
+    /*transform: translate(-50%,-50%);*/
+    margin: 0 0 2em 30em;
+    border-radius: 12px;
 }
 
 
-.bar{  /* COMBAK: barra de navegação */
-  width: 50px;
-  height: 10px;
-  border: 2px solid #fff;
-  margin: 6px;
-  cursor: pointer;  /* COMBAK: quando passar o mouse em cima vira um clicavel */
-  transition: 0.4s;  /* COMBAK: transição para a mudança de cor */
+.navigation {
+    /* COMBAK: navegação entre as imagens */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    /* COMBAK:para dividir em grid com as outras imagens  */
 }
 
 
-.bar:hover{  /* COMBAK: quando o curso ficar em cima, irá ficar branco */
-  background: #ffff;
-}
-
-input[ name="r" ]{ /* COMBAK: oculta as boxes(radios) checked */
-  position: absolute;
-  visibility: hidden;
-}
-
-
-.slides{/* COMBAK: div slides */
-  width: 500%;
-  height: 100%;
-  display: flex;
+.bar {
+    /* COMBAK: barra de navegação */
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    /* COMBAK: quando passar o mouse em cima vira um clicavel */
+    transition: 0.4s;
+    /* COMBAK: transição para a mudança de cor */
 }
 
 
-.slide{
-  width: 20%;
-  transition: 0.6s; /* COMBAK: transição para cada imagem composta na div */
+.bar:hover {
+    /* COMBAK: quando o curso ficar em cima, irá ficar branco */
+    background: #ffff;
+}
+
+input[ name="r"] {
+    /* COMBAK: oculta as boxes(radios) checked */
+    position: absolute;
+    visibility: hidden;
 }
 
 
-.slide img{
-  width: 100%; /* COMBAK: ajustando largura da imagem para ficar na box */
-  height: 100%; /* COMBAK: ajustando altura da imagem para ficar na box */
+.slides {
+    /* COMBAK: div slides */
+    width: 500%;
+    height: 100%;
+    display: flex;
 }
 
 
-#r1:checked ~ .s1{ /* COMBAK: tem que começar checado para poder passa para o proximo check */
-  margin-left: 0;
-
-  }
-
-#r2:checked ~ .s1{ /* COMBAK: tem que começar checado para poder passa para o proximo check */
-  margin-left: -20% ;/* COMBAK: vai da direita pra esquerda dessa porcentagem pro segundo. pois as imagens estão indo para os lados */
-
-  }
+.slide {
+    width: 20%;
+    transition: 0.6s;
+    /* COMBAK: transição para cada imagem composta na div */
+}
 
 
-#r3:checked ~ .s1{
-margin-left: -40% ;
+.slide img {
+    width: 100%;
+    /* COMBAK: ajustando largura da imagem para ficar na box */
+    height: 100%;
+    /* COMBAK: ajustando altura da imagem para ficar na box */
+}
 
-  }
 
-#r4:checked ~ .s1{
-margin-left: -60% ;
+#r1:checked~.s1 {
+    /* COMBAK: tem que começar checado para poder passa para o proximo check */
+    margin-left: 0;
 
-  }
+}
 
-#r5:checked ~ .s1{
-margin-left: -80% ;
+#r2:checked~.s1 {
+    /* COMBAK: tem que começar checado para poder passa para o proximo check */
+    margin-left: -20%;
+    /* COMBAK: vai da direita pra esquerda dessa porcentagem pro segundo. pois as imagens estão indo para os lados */
 
-  }
+}
+
+
+#r3:checked~.s1 {
+    margin-left: -40%;
+
+}
+
+#r4:checked~.s1 {
+    margin-left: -60%;
+
+}
+
+#r5:checked~.s1 {
+    margin-left: -80%;
+
+}
+
+.z {
+    display: block;
+}
+
+.footer-container {
+    height: 50px;
+    background-color: #002969;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
