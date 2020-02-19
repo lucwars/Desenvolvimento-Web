@@ -1,0 +1,119 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url('../fonts/BebasNeue-Regular.otf');
+    src: local(BebasNeue-Regular.otf), url(BebasNeue-Regular.otf);
+}
+
+/* WARNING: NÃO MEXER NA FONTE FACE */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background: #e0e0e0;
+    /* background: -webkit-linear-gradient(to right, #2B32B2, #1488CC); */
+    /* background: linear-gradient(to right, #2B32B2, #1488CC); */
+    font: 25px BebasNeue, Arial, Tahoma, Sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+.h1-title {
+    font: 25px BebasNeue, Arial, Tahoma, Sans-serif;
+    /* COMBAK: comando para importar a fonte */
+    text-align: center;
+    color: white;
+    letter-spacing: .2rem;
+    /* COMBAK: Espaçamento entre as letras */
+}
+
+.header {
+    display: flex;
+    height: 50px;
+    background-color: #002969;
+    margin: 0 0 20px 0;
+    justify-content: space-between;
+}
+
+.header a {
+    display: flex;
+    align-self: center;
+}
+
+.unifor-logo {
+    height: 40px;
+    margin-left: 3vw;
+    align-self: center;
+    cursor: pointer;
+}
+
+.unifor-online {
+    margin-right: 3vw;
+}
+
+.form-button {
+    margin-right: 4vw;
+}
+
+#container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form-container {
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    width: 460px;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 12px;
+    box-shadow: -1px 2px 8px 0px black;
+}
+
+form {
+    width: 100%;
+    padding: 12px;
+}
+
+.form-input {
+    border: 1px solid black;
+    width: 75%;
+    height: 20px;
+    margin: 12px 0 12px 4px;
+}
+
+#textarea-form {
+    resize: none;
+    border: 1px solid black;
+    width: 90%;
+    height: 160px;
+    font-size: 16px;
+    margin: 12px 0 12px 4px;
+}
+
+#button-submit {
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    margin-bottom: 12px;
+    border: 1px solid black;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: -1px 1px 6px 0px black;
+    outline: none;
+}
+
+#button-submit:hover {
+    background-color: #bababa;
+    transition-duration: 0.5s;
+}
