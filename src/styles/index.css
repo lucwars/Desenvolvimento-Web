@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: BebasNeue;
-    src: url('fontes/BebasNeue-Regular.otf');
+    src: url('../fonts/BebasNeue-Regular.otf');
     src: local(BebasNeue-Regular.otf), url(BebasNeue-Regular.otf);
 }
 
