@@ -1,0 +1,37 @@
+
+.header {
+    display: flex;
+    height: 60px;
+    background-color: #002969;
+    margin: 0 0 20px 0;
+    justify-content: space-between;
+}
+
+.header a {
+    display: flex;
+    align-self: center;
+}
+
+.unifor-logo {
+    height: 40px;
+    margin-left: 3vw;
+    align-self: center;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    color: rgb(0, 79, 125);
+
+}
+
+.unifor-online {
+    margin-right: 3vw;
+}
+
+.unifor-online:hover {
+    color: rgb(0, 79, 125);
+}
+
+.form-button {
+    margin-right: 4vw;
+}
