@@ -32,34 +32,6 @@ a {
     /* COMBAK: Espaçamento entre as letras */
 }
 
-.header {
-    display: flex;
-    height: 50px;
-    background-color: #002969;
-    margin: 0 0 20px 0;
-    justify-content: space-between;
-}
-
-.header a {
-    display: flex;
-    align-self: center;
-}
-
-.unifor-logo {
-    height: 40px;
-    margin-left: 3vw;
-    align-self: center;
-    cursor: pointer;
-}
-
-.unifor-online {
-    margin-right: 3vw;
-}
-
-.form-button {
-    margin-right: 4vw;
-}
-
 #container {
     margin-top: 32px;
     display: flex;
