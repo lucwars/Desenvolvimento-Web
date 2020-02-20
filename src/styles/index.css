@@ -4,7 +4,7 @@
 @font-face {
     font-family: BebasNeue;
     src: url('../assets/fonts/BebasNeue-Regular.otf');
-    src: local(BebasNeue-Regular.otf), url(BebasNeue-Regular.otf);
+    src: local("BebasNeue"), url(BebasNeue-Regular.otf);
 }
 
 /* WARNING: NÃO MEXER NA FONTE FACE */
