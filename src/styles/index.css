@@ -200,7 +200,7 @@ td {
     /* COMBAK: navegação entre as imagens */
     position: relative;
     bottom: 30px;
-    left: 50%;
+    left: 25%;
     /* transform: translateX(-50%); */
     display: flex;
     /* COMBAK:para dividir em grid com as outras imagens  */
