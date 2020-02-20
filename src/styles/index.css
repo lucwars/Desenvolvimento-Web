@@ -15,7 +15,7 @@
 }
 
 body {
-    background: #e0e0e0;
+    background: #ebebeb;
     /* background: -webkit-linear-gradient(to right, #2B32B2, #1488CC); */
     /* background: linear-gradient(to right, #2B32B2, #1488CC); */
     font: 25px BebasNeue, Arial, Tahoma, Sans-serif;
@@ -30,7 +30,7 @@ a {
     font: 25px BebasNeue, Arial, Tahoma, Sans-serif;
     /* COMBAK: comando para importar a fonte */
     text-align: center;
-    color: white;
+    color: rgb(125, 125, 125);
     letter-spacing: .2rem;
     /* COMBAK: Espaçamento entre as letras */
 }
@@ -39,7 +39,7 @@ a {
     font: 25px BebasNeue, Arial, Tahoma, Sans-serif;
     /* COMBAK: comando para importar a fonte */
     text-align: center;
-    color: white;
+    color: rgb(137, 126, 126);
     margin-top: 120px;
     letter-spacing: .2rem;
 }
@@ -64,8 +64,17 @@ a {
     cursor: pointer;
 }
 
+.form-button:hover {
+    color: rgb(0, 79, 125);
+
+}
+
 .unifor-online {
     margin-right: 3vw;
+}
+
+.unifor-online:hover {
+    color: rgb(0, 79, 125);
 }
 
 .form-button {
@@ -93,6 +102,7 @@ a {
     text-align: center;
     color: white;
     letter-spacing: .1rem;
+    background: #002969;
 }
 
 .table-phone {
@@ -175,7 +185,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: rgb(2, 74, 116);
+    background-color: rgb(0, 91, 144);
 }
 
 
@@ -196,7 +206,7 @@ td {
 
 #Descricao-campus {
     text-align: center;
-    color: white;
+    color: rgb(125, 125, 125);
     margin: 15px 0 200px 0 ;
 
 }
@@ -217,7 +227,7 @@ td {
     /* COMBAK: quanto maior, ele vai para baixo */
     /* COMBAK: mais longe da esquerda  */
     /*transform: translate(-50%,-50%);*/
-    margin: 0 0 0 40em;
+    margin: 0 0 0 48vw;
     border-radius: 12px;
 }
 
@@ -370,6 +380,9 @@ input[ name="r"] {
 
 .comunicate-list {
     margin-bottom: 1em;
+    font-size: 18px;
+    text-align: center;
+
 }
 
 .info-comunicate .info {
