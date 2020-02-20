@@ -24,13 +24,11 @@ a {
 }
 
 .h1-title {
-    font: 25px BebasNeue, Arial, Tahoma, Sans-serif;
+    font-size: 1.25em;
     /* COMBAK: comando para importar a fonte */
-    text-align: center;
-    color: white;
-    letter-spacing: .2rem;
     /* COMBAK: Espaçamento entre as letras */
-    color: rgb(125, 125, 125);
+    color: rgb(32, 55, 125);
+    margin-bottom: 30px;
 }
 
 #container {
@@ -49,9 +47,8 @@ a {
     width: 460px;
     padding: 16px;
     margin: 16px;
-    border-radius: 15px;
-    box-shadow: -1px 2px 8px 0px black;
-
+    border-radius: 6px;
+    box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
 }
 
 form {
@@ -59,38 +56,54 @@ form {
     padding: 12px;
 }
 
+.label {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-family: "ROBOTO";
+}
+
 .form-input {
-    border: 1px solid black;
+    padding: 4px;
+    background-color: rgba(171, 171, 171, 0.1);
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: gray;
     width: 75%;
     height: 20px;
-    margin: 12px 0 12px 4px;
-    border-radius: 6px;
+    margin: 4px 0 4px 4px;
 }
 
 #textarea-form {
+    padding: 4px;
+    background-color: rgba(171, 171, 171, 0.1);
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: gray;
     resize: none;
-    border: 1px solid black;
     width: 90%;
     height: 160px;
     font-size: 16px;
     margin: 12px 0 12px 4px;
-    border-radius: 8px;
 }
 
 #button-submit {
+    background-color: #002969;
+    color: white;
     text-align: center;
     height: 40px;
     width: 200px;
     margin-bottom: 12px;
-    border: 1px solid black;
-    border-radius: 12px;
+    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: -1px 1px 6px 0px black;
+    box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
     outline: none;
+    margin-top: 16px;
+    transition: 0.2s all ease;
 }
 
 #button-submit:hover {
-    background-color: #bababa;
-    transition-duration: 0.5s;
+    color: white;
+    background-color: #0043af;
+
 }
