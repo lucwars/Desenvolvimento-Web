@@ -30,6 +30,7 @@ a {
     color: white;
     letter-spacing: .2rem;
     /* COMBAK: Espaçamento entre as letras */
+    color: rgb(125, 125, 125);
 }
 
 #container {
@@ -38,6 +39,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 #form-container {
@@ -47,8 +49,9 @@ a {
     width: 460px;
     padding: 16px;
     margin: 16px;
-    border-radius: 12px;
+    border-radius: 15px;
     box-shadow: -1px 2px 8px 0px black;
+
 }
 
 form {
@@ -61,6 +64,7 @@ form {
     width: 75%;
     height: 20px;
     margin: 12px 0 12px 4px;
+    border-radius: 6px;
 }
 
 #textarea-form {
@@ -70,6 +74,7 @@ form {
     height: 160px;
     font-size: 16px;
     margin: 12px 0 12px 4px;
+    border-radius: 8px;
 }
 
 #button-submit {
